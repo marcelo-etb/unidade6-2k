@@ -1,3 +1,5 @@
+package exemplos;
+
 import java.text.DecimalFormat;
 public class TesteMath {
     public static void main(String[] args) {
