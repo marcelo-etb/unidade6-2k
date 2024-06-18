@@ -1,7 +1,6 @@
 package exemplos;
 import util.Tela;
 public class TesteVetor4 {
-
     public static void main(String[] args) {
         int quantidade = Tela.nextInt("Digite a quantidade de alunos");
         Aluno turma[] = new Aluno[quantidade];
@@ -11,10 +10,11 @@ public class TesteVetor4 {
             a.media = Tela.nextDouble("Digite a média do " + (i+1) + "º aluno");
             turma[i] = a;
         }
-        
+        String dados = "";
         for (int i = 0; i < quantidade; i++) {
-            System.out.println(turma[i]);
+            dados += turma[i] + "\n";
         }
+        Tela.showMessage(dados);
     }
 
 }
