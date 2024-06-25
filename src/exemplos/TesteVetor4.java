@@ -6,8 +6,8 @@ public class TesteVetor4 {
         Aluno turma[] = new Aluno[quantidade];
         for (int i = 0; i < quantidade; i++) {
             Aluno a = new Aluno();
-            a.nome = Tela.nextString("Digite o nome do " + (i+1) + "º aluno");
-            a.media = Tela.nextDouble("Digite a média do " + (i+1) + "º aluno");
+            a.setNome(Tela.nextString("Digite o nome do " + (i+1) + "º aluno"));
+            a.setMedia(Tela.nextDouble("Digite a média do " + (i+1) + "º aluno"));
             turma[i] = a;
         }
         String dados = "";

@@ -14,5 +14,15 @@ public class TesteVetor2 {
         for (int i = 0; i < quantidade; i++) {
             System.out.println("Nota[" + i + "]=" + notas[i]);
         }
+        
+        for (double nota : notas) {
+            System.out.print("Nota: " + nota + " | ");
+            if (nota >= 6) {
+                System.out.println("Aprovado");
+            } else {
+                System.out.println("Recuperação");
+            }
+            System.out.println("---------------------");
+        }
     }    
 }
